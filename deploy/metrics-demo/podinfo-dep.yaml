@@ -21,9 +21,6 @@ spec:
       containers:
       - name: metrics-demo
         image: quay.io/brice/metrics-demo:master
-        command:
-        - ./
-        - --port=3000
         ports:
         - containerPort: 3000 
         readinessProbe:
